@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const {scheduleDevTo} = require('../controller/scheduleDevTo.controller');
 
-const {publishArticle} = require('../controller/article.controller');
+router.post("/schedule", scheduleDevTo);
 
-router.post('/publish', publishArticle);
-
-module.exports= router;
+module.exports = router;

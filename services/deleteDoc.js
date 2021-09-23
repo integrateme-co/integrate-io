@@ -9,7 +9,3 @@ exports.delDoc = async() => {
         return error; // Failure
     });
 }
-
-// QueryDBn  -> record
-// Publish  -> rocrd
-// Delete D -> 
