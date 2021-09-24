@@ -4,11 +4,16 @@
   "main": "index.js",
   "repository": "https://github.com/iamrobins/integrate-io",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js && /services/cronjobs.js"
+  },
   "dependencies": {
     "axios": "^0.21.4",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7",
+    "node-cron": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
