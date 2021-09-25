@@ -7,7 +7,7 @@
 - Headers:
 
     ```bash
-    api-key : MiXvYZyVvqCP1oPjg2AdHhQp
+    api-key : MiXvYuiwhjk9322AhQp
     ```
 
 ## Schedule a post:
