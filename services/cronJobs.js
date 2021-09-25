@@ -14,6 +14,3 @@ setInterval(
   await delDoc();
   }
 ,5000)
-
-
-// runJobs();
