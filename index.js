@@ -1,11 +1,19 @@
 const express = require("express");
 const cors = require("cors");
-const app = express();
 const articleRoute = require('./routes/article.routes');
 const PORT = 8080;
-const connectDB = require('./config/db'); 
+const loggerService = require('./services/loggerService');
+const expressPinoLogger = require('express-pino-logger');
+const connectDB = require('./config/db');
 
-// makePost.postArticle();
+const app = express();
+loggerService.info("hi")
+const loggerMiddleware = expressPinoLogger({
+    logger: loggerService,
+    autoLogging: true,
+});
+
+app.use(loggerMiddleware);
 
 app.use(express.json());
 app.use(cors());

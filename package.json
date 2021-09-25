@@ -12,8 +12,11 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-pino-logger": "^6.0.0",
     "mongoose": "^6.0.7",
-    "node-cron": "^3.0.0"
+    "node-cron": "^3.0.0",
+    "pino": "^6.13.3",
+    "pino-pretty": "^7.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
