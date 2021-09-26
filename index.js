@@ -7,6 +7,11 @@ const expressPinoLogger = require('express-pino-logger');
 const connectDB = require('./config/db');
 
 const app = express();
+
+app.use(cors({
+    origin: '*'
+}));
+
 loggerService.info("hi")
 const loggerMiddleware = expressPinoLogger({
     logger: loggerService,
