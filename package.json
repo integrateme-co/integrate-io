@@ -15,6 +15,7 @@
     "express-pino-logger": "^6.0.0",
     "mongoose": "^6.0.7",
     "node-cron": "^3.0.0",
+    "node-fetch": "^3.0.0",
     "pino": "^6.13.3",
     "pino-pretty": "^7.0.1"
   },
