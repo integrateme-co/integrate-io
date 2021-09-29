@@ -34,7 +34,7 @@ Run the `services/cronJobs.js` file
 node cronJobs.js
 ```
 
-## Post From Dev to Medium
+## Post From Dev to Medium or Hashnode
 
 URI : [`http://localhost:8080/api/v2/dev`](http://localhost:8080/api/v2/dev)
 
@@ -42,17 +42,17 @@ Body:
 
 ```json
 {
-    "url": "https://dev.to/angha_ramdohokar_0b6505c2/creating-restful-apis-with-mongodb-and-node-js-25ap",
+    "url": "https://dev.to/uzairali10/load-balancer-101-4jl9",
     "medium": true,
-    "userID": "15663e2233566a737d485e1344dc8a834862bd7aa0a17ff2debaa043cd6f0816d",
-     "token":"2615790132f4a47a93d13abd55f106c94a8150d6a6a9d45d4ea9e2d67f81e2696"
+    "hash": true,
+    "medium_userID": "15663e223356baa043cd6f0816d",
+     "medium_token":"2615790132f4a47a93d13abd55f96",
+     "hash_token": "fee010ff-bd64-496a-d28a58e30bb9"
 }
 ```
 
-`url` : URL of the The Blog from [Dev.to](http://Dev.to) which is to be cross-posted (String)
-
-`medium` : (Boolean)
-
-`userID` : User;s medium's USERID
-
-`token` : User's API token
+- `url` : URL of the The Blog from [Dev.to](http://Dev.to) which is to be cross-posted (String)
+- `medium` : (Boolean)
+- `medium_userID` : User's medium's user ID can be fetched from ([https://api.medium.com/v1/me](https://api.medium.com/v1/me))
+- `medium_token` : User's medium's API token
+- `hash_token` : User's Hashnode API Token
