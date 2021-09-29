@@ -12,7 +12,6 @@ app.use(cors({
     origin: '*'
 }));
 
-loggerService.info("hi")
 const loggerMiddleware = expressPinoLogger({
     logger: loggerService,
     autoLogging: true,
