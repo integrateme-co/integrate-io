@@ -1,10 +1,37 @@
 const axios = require("axios");
 
-module.exports = async function postToHashnode(article, token) {
-  let title = article.title;
-  let markdown = article.body_markdown;
-  let slug = article.slug;
+
+function devBuilder(article){
+  const articleObj = {
+    title : article.title,
+    markdown : article.body_markdown,
+    slug : article.slug,
+  }
+  return articleObj;
+}
+
+function mediumBuilder (article){
+  const arr = article.guid.split('/');
+  const articleObj = {
+    title : article.title,
+    markdown : article.content,
+    slug : arr[5],
+  }
+  return articleObj;
+}
+
+module.exports = async function postToHashnode(articleBody, token, platform) {
   let authKey = token;
+  let article;
+
+  if(platform === "dev") {
+    article = devBuilder(articleBody);
+  }
+
+  if(platform === "medium") {
+    article = mediumBuilder(articleBody);
+  }
+
   try {
     let result = await axios.post(
       "https://api.hashnode.com",
@@ -13,12 +40,13 @@ module.exports = async function postToHashnode(article, token) {
           "mutation createStory($input: CreateStoryInput!){ createStory(input: $input){ code success message } }",
         variables: {
           input: {
-            title: title,
-            contentMarkdown: markdown,
+            title: article.title,
+            contentMarkdown: article.markdown,
+            //TODO: Remove Tags below
             tags: [
               {
                 _id: "56744723958ef13879b9549b",
-                slug: slug,
+                slug: article.slug,
                 name: "programmin, web-dev",
               },
             ],
