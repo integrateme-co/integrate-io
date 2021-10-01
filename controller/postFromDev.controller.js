@@ -10,16 +10,16 @@ function devURLParser(URL){
     return result;
 }
 
-
 // From Dev to Medium
 exports.postFromDev = async(req, res, next) => {
     const {url, medium, hash} = req.body;
     const {data} = await axios.get(devURLParser(url));
-
     const article = data;
 
+    let mediumPost;
+
     if(medium){
-         let mediumPost = await postToMedium(article, req.body.medium_userID, req.body.medium_token);
+         mediumPost = await postToMedium(article, req.body.medium_userID, req.body.medium_token);
          if(!mediumPost){
              //TODO: Fix response not sending due to promise
             //return res.status(201).json({"Message": "Sucessfully Created"});
@@ -27,9 +27,9 @@ exports.postFromDev = async(req, res, next) => {
          }
          
      }
-
+     // TODO: 
      if(hash){
-         let hashPost = await postToHashnode(article, req.body.hash_token);
+         let hashPost = await postToHashnode(article, req.body.hash_token, "dev");
          if(hashPost || mediumPost){
             //TODO: Fix response not sending due to promise
            return res.status(201).json({"Message": "Sucessfully Created"});;

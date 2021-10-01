@@ -56,3 +56,25 @@ Body:
 - `medium_userID` : User's medium's user ID can be fetched from ([https://api.medium.com/v1/me](https://api.medium.com/v1/me))
 - `medium_token` : User's medium's API token
 - `hash_token` : User's Hashnode API Token
+
+## Post From Medium to Dev or Hashnode
+
+URI: [`http://localhost:8080/api/v2/medium`](http://localhost:8080/api/v2/medium)
+
+Body:
+
+```json
+{
+    "url": "https://medium.com/@amanshri.nitrr/a-job-switch-plan-that-actually-works-e09701c26d88",
+    "dev_api": "ShVKKiC9AZ1tb",
+    "dev": true,
+    "hash": true,
+    "hash_api": "fee010ff-bde30bb9"
+}
+```
+
+- `url` : URL of the The Blog from Medium which is to be cross-posted (String)
+- `dev` : (Boolean)
+- `hash` : (Boolean)
+- `dev_api` : User's dev.to API token
+- `hash_api` : User's Hashnode API Token

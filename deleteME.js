@@ -5,6 +5,8 @@
 // const loggerService = require("./services/loggerService");
 // const postToDev = require('./controller/postToDev.controller');
 // const postToMediumController = require("./controller/postToMedium.controller");
+const { mediumToDev } = require("./controller/postFromMedium.controller");
+const postToDev = require("./services/postToDev");
 const postToHashnode = require("./services/postToHashnode");
 const postToMedium = require("./services/postToMedium");
 // const hash = require('./services/hash')
@@ -13,6 +15,3 @@ const postToMedium = require("./services/postToMedium");
 // console.log(s)
 // s.setMinutes(s.getMinutes()+3);
 
-
-//const article  = dummy('https://dev.to/shrutisantosh/for-a-newbie-by-a-veteran-newbie-2bip')
-postToHashnode(article, token);
