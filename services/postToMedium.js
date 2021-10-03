@@ -1,9 +1,20 @@
 const axios =  require('axios');
 
-module.exports = async function postToMedium(article, userID, token) {
+function hashBuilder(article){
+    const mediumArticle = {
+        "title": article.title,
+        "contentFormat": "html",
+        "content": article.content,
+        "publishStatus": "draft"
+      };
+      return mediumArticle;
+}
+
+module.exports = async function postToMedium(article, userID, token, platform) {
+
     let reqURL = `https://api.medium.com/v1/users/${userID}/posts`;
 
-    const mediumArticle = {
+    let mediumArticle = {
         "title": article.title,
         "contentFormat": "html",
         "content": article.body_html,
@@ -12,6 +23,9 @@ module.exports = async function postToMedium(article, userID, token) {
         "publishStatus": "draft"
       };
 
+      if(platform==="hash"){
+        mediumArticle = hashBuilder(article);
+      }
        const config = {
         headers: { Authorization: `Bearer ${token}` }
     };
@@ -25,6 +39,5 @@ module.exports = async function postToMedium(article, userID, token) {
         return result;
     } catch(error){
         console.log(error);
-        return "An Error Occured"
     }
 }

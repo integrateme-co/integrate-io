@@ -31,7 +31,7 @@ exports.postFromMedium = async(req, res, next) => {
         }
         //TODO: Array is comming in article
         if(dev) {
-            const Devblog = await postToDev(article[0], dev_api);
+            const Devblog = await postToDev(article[0], dev_api, "medium");
 
             //TODO: Add Check if !DevBlog
             // if(!Devblog){
