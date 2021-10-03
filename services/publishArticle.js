@@ -8,7 +8,7 @@ module.exports = async function(records) {
     {
         const headers = {"api-key": records[index].APIkey}
         let result = await axios.put(POST_URL+ records[index].articleID, {"article": {"published": true}}, { headers });
-        //TODO: Add article ID
+
         loggerService.info(`Article published with ID: {records[index].articleID}`)
 
     }
