@@ -42,7 +42,6 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
           input: {
             title: article.title,
             contentMarkdown: article.markdown,
-            //TODO: Remove Tags below
             tags: [
               {
                 _id: "56744723958ef13879b9549b",

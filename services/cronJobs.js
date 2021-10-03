@@ -7,8 +7,6 @@ const { delDoc } = require("./deleteDoc");
 setInterval(
   async function runJobs() {
     const records = await searchDB();
-
-    // TODO: Add Checks
    const publishedResult = await publishArticle(records);
 
   await delDoc();
