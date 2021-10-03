@@ -1,10 +1,24 @@
 const axios = require('axios');
 
-//TODO: Add Dynamic artticle obj and API key through req.body
+function hashBuilder(article)
+{
+    const devArticle =  {
+        "article": {
+          "title": article.title,
+          "published": false,
+          "body_markdown": article.content,
+        }
+      };
+}
 
-module.exports = async function postToDev (article, token) {
+module.exports = async function postToDev (article, token, platform) {
 
-    const headers = {'api-key': token};
+    const headers = {
+        'Content-Type': 'application/json',
+        'api-key': token,
+    };
+
+
 
     const devArticle =  {
         "article": {
@@ -21,7 +35,7 @@ module.exports = async function postToDev (article, token) {
             devArticle,
             {headers},
         )
-        console.log(result);
+        return result;
 
     } catch(error) {
         console.log(error);
