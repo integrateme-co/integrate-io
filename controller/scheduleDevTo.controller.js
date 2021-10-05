@@ -10,5 +10,5 @@ exports.scheduleDevTo = async(req, res, next) => {
 
   await schedulePost.save();
 
-  res.status(201).json({response: "You post has been succesfully scheduled"});
+  res.status(201).json({response: "Your post has been succesfully scheduled"});
 }
