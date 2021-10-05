@@ -1,5 +1,9 @@
 # Integrate.io API Docs
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/72073401/136081559-35426b5c-6579-40ed-ac99-f064cfc47abd.png" alt="integrate.io logo"/>
+</p>
+
 ## Get All unpublished posts:
 
 [https://dev.to/api/articles/me/unpublished](https://dev.to/api/articles/me/unpublished)
