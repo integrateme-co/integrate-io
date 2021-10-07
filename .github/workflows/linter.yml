@@ -53,3 +53,11 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  lint:
+       runs-on: ubuntu-latest
+       
+       steps:
+          - name: Super-Linter
+            uses: github/super-linter@v4.8.1
+            env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
