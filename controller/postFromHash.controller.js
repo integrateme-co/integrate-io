@@ -13,7 +13,7 @@ exports.postFromHash = async (req, res, next) => {
     try{
       //TODO: Add Dynamic Slug
         const GET_ARTCILE = `{
-            post(slug: "beginners-guide-to-hacktoberfest-2021", hostname: ""){
+            post(slug: "${slug}", hostname: ""){
               title
               content
             }
