@@ -1,17 +1,16 @@
 const axios = require('axios');
 
-function hashBuilder(article)
-{
-    const devArticle =  {
+function hashBuilder(article) {
+    const devArticle = {
         "article": {
-          "title": article.title,
-          "published": false,
-          "body_markdown": article.content,
+            "title": article.title,
+            "published": false,
+            "body_markdown": article.content,
         }
-      };
+    };
 }
 
-module.exports = async function postToDev (article, token, platform) {
+module.exports = async function postToDev(article, token, platform) {
 
     const headers = {
         'Content-Type': 'application/json',
@@ -20,24 +19,23 @@ module.exports = async function postToDev (article, token, platform) {
 
 
 
-    const devArticle =  {
+    const devArticle = {
         "article": {
-          "title": article.title,
-          "published": false,
-          "body_markdown": article.content,
+            "title": article.title,
+            "published": false,
+            "body_markdown": article.content,
         }
-      };
+    };
 
     try {
 
         let result = await axios.post(
             'https://dev.to/api/articles',
-            devArticle,
-            {headers},
+            devArticle, { headers }
         )
         return result;
 
-    } catch(error) {
+    } catch (error) {
         console.log(error);
     }
 
