@@ -55,7 +55,7 @@ exports.postFromHash = async (req, res, next) => {
       logger.info("Blog Sucessfully Posted")
       return res.status(201).json({ "Message": "Blog Sucessfully Posted" });
     }
-    logger.error("None Encountred")
+    logger.info("None Encountred")
     return res.status(400).json({ "Error": "None Encountred" });
   } catch (error) {
     logger.error(error)

@@ -21,6 +21,7 @@ exports.postFromDev = async (req, res, next) => {
         if (medium) {
             mediumPost = await postToMedium(article, req.body.medium_userID, req.body.medium_token);
             if (!mediumPost) {
+                logger.warn({ article, medium_userID: req.body.medium_userID, medium_token: req.body.medium_token })
                 logger.error("An Error Occured While Posting from Dev.to to Medium")
                 return res.status(400).json({ "Error": "An Error Occured While Posting from Dev.to to Medium" });
             }
@@ -38,7 +39,7 @@ exports.postFromDev = async (req, res, next) => {
             logger.info("Sucessfully Created")
             return res.status(201).json({ "Message": "Sucessfully Created" });;
         }
-        logger.error("None Encountred")
+        logger.info("None Encountred")
         return res.status(400).json({ "Error": "None Encountred" });
     } catch (error) {
         logger.error(error)
