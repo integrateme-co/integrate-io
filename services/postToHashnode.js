@@ -1,21 +1,22 @@
 const axios = require("axios");
+const logger = require('../services/loggerService')
 
 
-function devBuilder(article){
+function devBuilder(article) {
   const articleObj = {
-    title : article.title,
-    markdown : article.body_markdown,
-    slug : article.slug,
+    title: article.title,
+    markdown: article.body_markdown,
+    slug: article.slug,
   }
   return articleObj;
 }
 
-function mediumBuilder (article){
+function mediumBuilder(article) {
   const arr = article.guid.split('/');
   const articleObj = {
-    title : article.title,
-    markdown : article.content,
-    slug : arr[5],
+    title: article.title,
+    markdown: article.content,
+    slug: arr[5],
   }
   return articleObj;
 }
@@ -24,11 +25,11 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
   let authKey = token;
   let article;
 
-  if(platform === "dev") {
+  if (platform === "dev") {
     article = devBuilder(articleBody);
   }
 
-  if(platform === "medium") {
+  if (platform === "medium") {
     article = mediumBuilder(articleBody);
   }
 
@@ -61,9 +62,9 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
         },
       }
     );
-    console.log(result);
+    logger.info(result)
     return result;
   } catch (error) {
-    console.log(error);
+    logger.error(error)
   }
 }
