@@ -30,6 +30,7 @@ exports.postFromDev = async (req, res, next) => {
         if (hash) {
             hashPost = await postToHashnode(article, req.body.hash_token, "dev");
             if (!hashPost) {
+                logger.error({ article, hash_token: req.body.hash_token, platform: "dev" })
                 logger.error("An Error Occured While Posting from Dev.to to Hashnode")
                 return res.status(400).json({ "Error": "An Error Occured While Posting from Dev.to to Hashnode" });
             }

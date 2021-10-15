@@ -47,6 +47,7 @@ exports.postFromMedium = async (req, res, next) => {
         if (dev) {
             Devblog = await postToDev(article, dev_api, "medium");
             if (!Devblog) {
+                logger.error({ article, dev_api, platform: "medium" })
                 logger.error("Unable to publish to Dev.to From Medium")
                 return res.status(400).json({ "Error": "Unable to publish to Dev.to From Medium" });
             }
@@ -55,6 +56,7 @@ exports.postFromMedium = async (req, res, next) => {
         if (hash) {
             hashBlog = await postToHashnode(article, hash_api, "medium");
             if (!hashBlog) {
+                logger.error({ article, hash_api, platform: "medium" })
                 logger.error("Unable to publish to Hashnode from Medium")
                 return res.status(400).json({ "Error": "Unable to publish to Hashnode from Medium" });
             }
