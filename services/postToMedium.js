@@ -1,13 +1,14 @@
-const axios =  require('axios');
+const axios = require('axios');
+const logger = require('../services/loggerService')
 
-function hashBuilder(article){
+function hashBuilder(article) {
     const mediumArticle = {
         "title": article.title,
         "contentFormat": "html",
         "content": article.content,
         "publishStatus": "draft"
-      };
-      return mediumArticle;
+    };
+    return mediumArticle;
 }
 
 module.exports = async function postToMedium(article, userID, token, platform) {
@@ -21,23 +22,24 @@ module.exports = async function postToMedium(article, userID, token, platform) {
         "canonicalUrl": article.canonical_url,
         "tags": article.tags,
         "publishStatus": "draft"
-      };
+    };
 
-      if(platform==="hash"){
+    if (platform === "hash") {
         mediumArticle = hashBuilder(article);
-      }
-       const config = {
+    }
+    const config = {
         headers: { Authorization: `Bearer ${token}` }
     };
-    
+
     try {
         let result = await axios.post(
             reqURL,
             mediumArticle,
             config,
         )
+        logger.info(result)
         return result;
-    } catch(error){
-        console.log(error);
+    } catch (error) {
+        logger.error(error)
     }
 }
