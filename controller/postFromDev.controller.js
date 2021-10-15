@@ -21,8 +21,8 @@ exports.postFromDev = async (req, res, next) => {
         if (medium) {
             mediumPost = await postToMedium(article, req.body.medium_userID, req.body.medium_token);
             if (!mediumPost) {
-                logger.info({ article, medium_userID: req.body.medium_userID, medium_token: req.body.medium_token })
                 logger.error("An Error Occured While Posting from Dev.to to Medium")
+                logger.info({ article, medium_userID: req.body.medium_userID, medium_token: req.body.medium_token })
                 return res.status(400).json({ "Error": "An Error Occured While Posting from Dev.to to Medium" });
             }
 
@@ -30,8 +30,8 @@ exports.postFromDev = async (req, res, next) => {
         if (hash) {
             hashPost = await postToHashnode(article, req.body.hash_token, "dev");
             if (!hashPost) {
-                logger.info({ article, hash_token: req.body.hash_token, platform: "dev" })
                 logger.error("An Error Occured While Posting from Dev.to to Hashnode")
+                logger.info({ article, hash_token: req.body.hash_token, platform: "dev" })
                 return res.status(400).json({ "Error": "An Error Occured While Posting from Dev.to to Hashnode" });
             }
         }
