@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const articleRoute = require('./routes/article.routes');
@@ -5,9 +6,7 @@ const PORT = 8080;
 const loggerService = require('./services/loggerService');
 const expressPinoLogger = require('express-pino-logger');
 const connectDB = require('./config/db');
-
 const app = express();
-
 app.use(cors({
     origin: '*'
 }));
