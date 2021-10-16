@@ -20,5 +20,5 @@ const levels = {
       translateTime: 'yyyy-dd-mm, h:MM:ss TT',
     },
   },
-  pino.destination("../pino-logger.log")
+  pino.destination("./pino-logger.log")
   );
