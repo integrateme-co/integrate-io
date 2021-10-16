@@ -5,7 +5,7 @@
   "repository": "https://github.com/iamrobins/integrate-io",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "node index.js",
     "start": "node index.js"
   },
   "dependencies": {

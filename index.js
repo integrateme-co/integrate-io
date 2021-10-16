@@ -6,6 +6,10 @@ const PORT = process.env.PORT || 8080;
 const loggerService = require('./services/loggerService');
 const expressPinoLogger = require('express-pino-logger');
 const connectDB = require('./config/db');
+const cronJob = require("./services/cronJobs");
+
+cronJob();
+
 const app = express();
 app.use(cors({
     origin: '*'

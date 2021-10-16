@@ -1,1 +1,296 @@
 [32mINFO[39m [2021-16-10, 1:43:49 PM] (23562 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 2:13:49 PM] (30009 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:23:35 PM] (20380 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:23:43 PM] (20447 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:23:46 PM] (20465 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:23:49 PM] (20505 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:24:33 PM] (20767 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:25:29 PM] (21332 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:27:21 PM] (21796 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:27:43 PM] (21917 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:33:47 PM] (23198 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:34:16 PM] (23378 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:36:06 PM] (23866 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[32mINFO[39m [2021-16-10, 5:37:49 PM] (24485 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[34mDEBUG[39m [2021-16-10, 5:37:53 PM] (24485 on Lenevo-IdeaPad):
+    0: {
+      "_id": "616a8c0669c9919c6e9ac424",
+      "publishTime": "2021-10-16T08:30:00.598Z",
+      "articleID": "845102",
+      "APIkey": "Lao3gD9YeBtmaebNKCnA6kxY",
+      "__v": 0
+    }
+    1: {
+      "_id": "616afe315af377b7aa21a81f",
+      "publishTime": "2021-10-16T16:40:00.510Z",
+      "articleID": "865627",
+      "APIkey": "Lao3gD9YeBtmaebNKCnA6kxY",
+      "__v": 0
+    }
+    2: {
+      "_id": "616b040e5af377b7aa21a821",
+      "publishTime": "2021-10-16T17:00:00.264Z",
+      "articleID": "845101",
+      "APIkey": "Lao3gD9YeBtmaebNKCnA6kxY",
+      "__v": 0
+    }
+    3: {
+      "_id": "616b093b5af377b7aa21a823",
+      "publishTime": "2021-10-16T17:19:39.584Z",
+      "articleID": "845101",
+      "APIkey": "Lao3gD9YeBtmaebNKCnA6kxY",
+      "__v": 0
+    }
+[41mFATAL[49m [2021-16-10, 5:37:54 PM] (24485 on Lenevo-IdeaPad): [36mRequest failed with status code 404[39m
+    Error: Request failed with status code 404
+        at createError (/home/dark/Dev/API-Hacks/integrate-io/node_modules/axios/lib/core/createError.js:16:15)
+        at settle (/home/dark/Dev/API-Hacks/integrate-io/node_modules/axios/lib/core/settle.js:17:12)
+        at IncomingMessage.handleStreamEnd (/home/dark/Dev/API-Hacks/integrate-io/node_modules/axios/lib/adapters/http.js:269:11)
+        at IncomingMessage.emit (events.js:387:35)
+        at endReadableNT (internal/streams/readable.js:1317:12)
+        at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[41mFATAL[49m [2021-16-10, 5:37:54 PM] (24485 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:37:58 PM] (24485 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:37:58 PM] (24485 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:03 PM] (24485 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:03 PM] (24485 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:08 PM] (24485 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:08 PM] (24485 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:13 PM] (24485 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:13 PM] (24485 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[32mINFO[39m [2021-16-10, 5:38:17 PM] (24607 on Lenevo-IdeaPad): [36mConnected to MongoDB database 🚀[39m
+[34mDEBUG[39m [2021-16-10, 5:38:22 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:22 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:27 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:27 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:32 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:32 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:37 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:37 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:42 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:42 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:47 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:47 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:52 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:52 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:38:57 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:38:57 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:02 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:02 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:07 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:07 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:12 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:12 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:17 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:17 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:22 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:22 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:27 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:27 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:32 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:32 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:37 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:37 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:42 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:42 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:47 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:47 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:52 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:52 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:39:57 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:39:57 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:02 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:02 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:07 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:07 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:12 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:12 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:17 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:17 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:22 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:22 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:27 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:27 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:32 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:32 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:37 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:37 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:42 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:42 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
+[34mDEBUG[39m [2021-16-10, 5:40:47 PM] (24607 on Lenevo-IdeaPad):
+[41mFATAL[49m [2021-16-10, 5:40:47 PM] (24607 on Lenevo-IdeaPad): [36mloggerService is not defined[39m
+    ReferenceError: loggerService is not defined
+        at /home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:7:9
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+        at async exports.delDoc (/home/dark/Dev/API-Hacks/integrate-io/services/deleteDoc.js:6:5)
+        at async Timeout.runJobs [as _onTimeout] (/home/dark/Dev/API-Hacks/integrate-io/services/cronJobs.js:15:5)
