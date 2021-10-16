@@ -1,9 +1,5 @@
 # Integrate.io API Docs
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/72073401/136081559-35426b5c-6579-40ed-ac99-f064cfc47abd.png" alt="integrate.io logo"/>
-</p>
-
 ## Get All unpublished posts:
 
 [https://dev.to/api/articles/me/unpublished](https://dev.to/api/articles/me/unpublished)
@@ -82,3 +78,20 @@ Body:
 - `hash` : (Boolean)
 - `dev_api` : User's dev.to API token
 - `hash_api` : User's Hashnode API Token
+
+## Post From Hashnode to Dev or Medium
+
+URI: [http://localhost:8080/api/v2/hash](http://localhost:8080/api/v2/hash)
+
+Body:
+
+```json
+{
+    "url" : "https://blog.tomaszgil.me/make-the-most-out-of-your-next-migration-project",
+    "dev": true,
+    "medium": true,
+    "dev_api": "ShVKAZ1tb",
+    "medium_id": "1543cd6f0816d",
+    "medium_api":"2615790132f4a2d67f81e2696"
+}
+```
