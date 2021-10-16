@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const articleRoute = require('./routes/article.routes');
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const loggerService = require('./services/loggerService');
 const expressPinoLogger = require('express-pino-logger');
 const connectDB = require('./config/db');
