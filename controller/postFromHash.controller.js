@@ -12,7 +12,6 @@ exports.postFromHash = async (req, res, next) => {
   const { url, medium, dev, dev_api, medium_id, medium_api } = req.body;
   const slug = hashURLParser(url)
   try {
-    //TODO: Add Dynamic Slug
     const GET_ARTCILE = `{
             post(slug: "${slug}", hostname: ""){
               title
