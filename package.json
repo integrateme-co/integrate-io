@@ -5,7 +5,8 @@
   "repository": "https://github.com/iamrobins/integrate-io",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js && /services/cronjobs.js"
+    "dev": "nodemon index.js && /services/cronjobs.js",
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.21.4",
@@ -21,6 +22,10 @@
     "pino-pretty": "^7.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-jest": "^27.2.5",
+    "jest": "^27.2.5",
     "nodemon": "^2.0.12"
   }
 }
