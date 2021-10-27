@@ -38,7 +38,7 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
       "https://api.hashnode.com",
       {
         query:
-          "mutation createStory($input: CreateStoryInput!){ createStory(input: $input){ code success message } }",
+          "mutation createStory($input: CreateStoryInput!){ createStory(input: $input){ code success message post { slug cuid } } }",
         variables: {
           input: {
             title: article.title,

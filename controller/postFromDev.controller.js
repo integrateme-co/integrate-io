@@ -17,31 +17,36 @@ exports.postFromDev = async (req, res, next) => {
 
         let mediumPost;
         let hashPost;
+        let postURL;
 
         if (medium) {
             mediumPost = await postToMedium(article, req.body.medium_userID, req.body.medium_token);
             if (!mediumPost) {
-                logger.error("An Error Occured While Posting from Dev.to to Medium")
+                logger.error("An Error Occurred While Posting from Dev.to to Medium")
                 logger.info({ article, medium_userID: req.body.medium_userID, medium_token: req.body.medium_token })
-                return res.status(400).json({ "Error": "An Error Occured While Posting from Dev.to to Medium" });
+                return res.status(400).json({ "Error": "An Error Occurred While Posting from Dev.to to Medium" });
             }
-
+            postURL = mediumPost.data.data.url;
         }
         if (hash) {
             hashPost = await postToHashnode(article, req.body.hash_token, "dev");
             if (!hashPost) {
-                logger.error("An Error Occured While Posting from Dev.to to Hashnode")
+                logger.error("An Error Occurred While Posting from Dev.to to Hashnode")
                 logger.info({ article, hash_token: req.body.hash_token, platform: "dev" })
-                return res.status(400).json({ "Error": "An Error Occured While Posting from Dev.to to Hashnode" });
+                return res.status(400).json({ "Error": "An Error Occurred While Posting from Dev.to to Hashnode" });
             }
+            postURL = `https://hashnode.com/post/${hashPost.data.data.createStory.post.slug}-${hashPost.data.data.createStory.post.cuid}`;
         }
 
-        if (hashPost || mediumPost) {
-            logger.info("Sucessfully Created")
-            return res.status(201).json({ "Message": "Sucessfully Created" });;
+        if (hashPost) {
+            logger.info("Successfully Created")
+            return res.status(201).json({ "Message": "Successfully Created", "hash_link": postURL });;
+        } else if (mediumPost) {
+            logger.info("Successfully Created")
+            return res.status(201).json({ "Message": "Successfully Created", "medium_link": postURL });;
         }
-        logger.info("None Encountred")
-        return res.status(400).json({ "Error": "None Encountred" });
+        logger.info("None Encountered")
+        return res.status(400).json({ "Error": "None Encountered" });
     } catch (error) {
         logger.error(error)
         return res.send(error);
