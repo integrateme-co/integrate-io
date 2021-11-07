@@ -103,3 +103,12 @@ Body:
     "medium_api":"2615790132f4a2d67f81e2696"
 }
 ```
+## Donating
+  
+  
+Help Us Pay off Our Domain and Hosting Charges<br>
+
+
+<a href="https://www.buymeacoffee.com/integrateme">
+<img width="208" alt="snapshot-bmc-button" src="https://user-images.githubusercontent.com/72073401/140631132-f03daad8-c1e8-45ed-970b-94f204d5bba4.png">
+</a>
