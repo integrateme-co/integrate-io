@@ -23,5 +23,5 @@ app.use(express.json());
 app.use(cors());
 app.use('/api/v2', articleRoute);
 
-connectDB();
+// connectDB();
 app.listen(PORT, () => console.log(`Server is running 🔥 on http://localhost:${PORT}`));
