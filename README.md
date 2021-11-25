@@ -53,7 +53,6 @@ Body:
     "url": "https://dev.to/uzairali10/load-balancer-101-4jl9",
     "medium": true,
     "hash": true,
-    "medium_userID": "15663e223356baa043cd6f0816d",
      "medium_token":"2615790132f4a47a93d13abd55f96",
      "hash_token": "fee010ff-bd64-496a-d28a58e30bb9"
 }
