@@ -33,14 +33,16 @@ exports.postFromHash = async (req, res, next) => {
     const hashArticle = result.data.data.post;
     let devArticle;
     let mediumArticle;
+    let postURL;
 
     if (dev) {
       devArticle = await postToDev(hashArticle, dev_api, "hash");
       if (!devArticle) {
         logger.info({ hashArticle, dev_api, platform: "hash" })
-        logger.error("An Error Occured While Posting on Dev.to from Hashnode")
-        return res.status(400).json({ "Message": "An Error Occured While Posting on Dev.to from Hashnode" });
+        logger.error("An Error Occurred While Posting on Dev.to from Hashnode")
+        return res.status(400).json({ "Message": "An Error Occurred While Posting on Dev.to from Hashnode" });
       }
+      postURL = `${devArticle.data.url}/edit`;
     }
 
     if (medium) {
@@ -48,17 +50,21 @@ exports.postFromHash = async (req, res, next) => {
       if (!mediumArticle) {
 
         logger.info({ hashArticle, medium_id, medium_api, platform: "medium" })
-        logger.error("An Error Occured While Posting on Medium from Hashnode")
-        return res.status(400).json({ "Message": "An Error Occured While Posting on Medium from Hashnode" });
+        logger.error("An Error Occurred While Posting on Medium from Hashnode")
+        return res.status(400).json({ "Message": "An Error Occurred While Posting on Medium from Hashnode" });
       }
+      postURL = mediumArticle.data.data.url;
     }
 
-    if (mediumArticle || devArticle) {
-      logger.info("Blog Sucessfully Posted")
-      return res.status(201).json({ "Message": "Blog Sucessfully Posted" });
+    if (mediumArticle) {
+      logger.info("Blog Successfully Posted")
+      return res.status(201).json({ "Message": "Blog Successfully Posted", "medium_link": postURL });
+    } else if (devArticle) {
+      logger.info("Blog Successfully Posted")
+      return res.status(201).json({ "Message": "Blog Successfully Posted", "dev_link": postURL });
     }
-    logger.info("None Encountred")
-    return res.status(400).json({ "Error": "None Encountred" });
+    logger.info("None Encountered")
+    return res.status(400).json({ "Error": "None Encountered" });
   } catch (error) {
     logger.error(error)
     return res.send(error);
