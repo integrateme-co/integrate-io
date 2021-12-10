@@ -2,7 +2,11 @@
   <img src="https://user-images.githubusercontent.com/72073401/136081559-35426b5c-6579-40ed-ac99-f064cfc47abd.png" alt="integrate.io logo"/>
 </p>
 
-# Integrate.io API Docs
+# Backend Architecture
+
+![Cross-Post Architechure](https://user-images.githubusercontent.com/72073401/139555093-bdfb353d-aa12-46bb-9a8e-e4b73bc4da57.jpg)
+
+# integrateme.co API Docs
 
 ## Get All unpublished posts:
 
@@ -49,7 +53,6 @@ Body:
     "url": "https://dev.to/uzairali10/load-balancer-101-4jl9",
     "medium": true,
     "hash": true,
-    "medium_userID": "15663e223356baa043cd6f0816d",
      "medium_token":"2615790132f4a47a93d13abd55f96",
      "hash_token": "fee010ff-bd64-496a-d28a58e30bb9"
 }
@@ -99,3 +102,12 @@ Body:
     "medium_api":"2615790132f4a2d67f81e2696"
 }
 ```
+## Donating
+  
+  
+Help Us Pay off Our Domain and Hosting Charges<br>
+
+
+<a href="https://www.buymeacoffee.com/integrateme">
+<img width="208" alt="snapshot-bmc-button" src="https://user-images.githubusercontent.com/72073401/140631132-f03daad8-c1e8-45ed-970b-94f204d5bba4.png">
+</a>
