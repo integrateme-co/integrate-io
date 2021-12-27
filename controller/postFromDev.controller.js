@@ -9,6 +9,37 @@ function devURLParser(URL) {
     return result;
 }
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *      DevPost:
+ *          type: object
+ *          properties:
+ *              url:
+ *                  type: string
+ *                  description: Article URL
+ *              medium:
+ *                  type: boolean
+ *                  description: If it should post to Medium
+ *              medium_userID:
+ *                  type: string
+ *                  description: User's medium's user ID can be fetched from (https://api.medium.com/v1/me)
+ *              medium_token:
+ *                  type: string
+ *                  description: User's medium's API token
+ *              hash:
+ *                  type: boolean
+ *                  description: If it should post to Hasnode
+ *              hash_token:
+ *                  type: string
+ *                  description: User's Hashnode API Token
+ *          example:
+ *              url: 383924
+ *              medium: false
+ *              hash: true
+ *              hash_token: fee010ff-bd64-496a-d28a58e30bb9
+ */
 exports.postFromDev = async (req, res, next) => {
     try {
         const { url, medium, hash } = req.body;

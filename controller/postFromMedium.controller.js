@@ -8,6 +8,35 @@ function mediumURLparser(URL) {
     return result;
 }
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *      MediumPost:
+ *          type: object
+ *          properties:
+ *              url:
+ *                  type: string
+ *                  description: Article URL
+ *              dev:
+ *                  type: boolean
+ *                  description: If it should post to Dev.to
+ *              dev_api:
+ *                  type: string
+ *                  description: User's Dev.to API token
+ *              hash:
+ *                  type: boolean
+ *                  description: If it should post to Hasnode
+ *              hash_token:
+ *                  type: string
+ *                  description: User's Hashnode API Token
+ *          example:
+ *              url: 383924
+ *              dev: true
+ *              dev_api: ShVKKiC9AZ1tb
+ *              hash: true
+ *              hash_token: fee010ff-bd64-496a-d28a58e30bb9
+ */
 exports.postFromMedium = async(req, res, next) => {
     try{
         const {url, dev, hash, dev_api, hash_api} = req.body;
