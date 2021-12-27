@@ -83,19 +83,16 @@ Body:
 - `dev_api` : User's dev.to API token
 - `hash_api` : User's Hashnode API Token
 
-## Post From Hashnode to Dev or Medium
+## Swagger API documentation
 
-URI: [http://localhost:8080/api/v2/hash](http://localhost:8080/api/v2/hash)
+Access the api documentation using [http://localhost:8080/api-docs](http://localhost:8080/api-docs)
 
-Body:
+## Donating
+  
+  
+Help Us Pay off Our Domain and Hosting Charges<br>
 
-```json
-{
-    "url" : "https://blog.tomaszgil.me/make-the-most-out-of-your-next-migration-project",
-    "dev": true,
-    "medium": true,
-    "dev_api": "ShVKAZ1tb",
-    "medium_id": "1543cd6f0816d",
-    "medium_api":"2615790132f4a2d67f81e2696"
-}
-```
+
+<a href="https://www.buymeacoffee.com/integrateme">
+<img width="208" alt="snapshot-bmc-button" src="https://user-images.githubusercontent.com/72073401/140631132-f03daad8-c1e8-45ed-970b-94f204d5bba4.png">
+</a>

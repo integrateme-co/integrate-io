@@ -8,6 +8,39 @@ function hashURLParser(URL) {
   return arr[3];
 }
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *      HashPost:
+ *          type: object
+ *          properties:
+ *              url:
+ *                  type: string
+ *                  description: Article URL
+ *              dev:
+ *                  type: boolean
+ *                  description: If it should post to Dev.to
+ *              dev_api:
+ *                  type: string
+ *                  description: User's Dev.to API token
+ *              medium:
+ *                  type: boolean
+ *                  description: If it should post to Medium
+ *              medium_userID:
+ *                  type: string
+ *                  description: User's medium's user ID can be fetched from (https://api.medium.com/v1/me)
+ *              medium_token:
+ *                  type: string
+ *                  description: User's medium's API token
+ *          example:
+ *              url: 383924
+ *              dev: true
+ *              dev_api: ShVKKiC9AZ1tb
+ *              medium: true
+ *              medium_id: 1543cd6f0816d
+ *              medium_api: 2615790132f4a2d67f81e2696
+ */
 exports.postFromHash = async (req, res, next) => {
   const { url, medium, dev, dev_api, medium_id, medium_api } = req.body;
   const slug = hashURLParser(url)
