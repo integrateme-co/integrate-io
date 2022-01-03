@@ -105,7 +105,7 @@ Body:
 ## Donating
   
   
-Help Us Pay off Our Domain and Hosting Charges<br>
+Help Us Pay off Our Domain and Hosting Charges :smily <br>
 
 
 <a href="https://www.buymeacoffee.com/integrateme">
