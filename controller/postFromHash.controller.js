@@ -44,7 +44,7 @@ exports.postFromHash = async (req, res, next) => {
     }
 
     if (medium) {
-      mediumArticle = await postToMedium(hashArticle, medium_id, medium_api, "hash")
+      mediumArticle = await postToMedium(hashArticle,medium_api, "hash")
       if (!mediumArticle) {
 
         logger.info({ hashArticle, medium_id, medium_api, platform: "medium" })

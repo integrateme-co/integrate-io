@@ -1,6 +1,6 @@
 const axios = require('axios');
 const logger = require('../services/loggerService')
-
+const fetchMediumUserId = require('../services/fetchMediumUserId');
 function hashBuilder(article) {
     const mediumArticle = {
         "title": article.title,
@@ -11,8 +11,8 @@ function hashBuilder(article) {
     return mediumArticle;
 }
 
-module.exports = async function postToMedium(article, userID, token, platform) {
-
+module.exports = async function postToMedium(article, token, platform) {
+    const userID = await fetchMediumUserId(token);
     let reqURL = `https://api.medium.com/v1/users/${userID}/posts`;
 
     let mediumArticle = {
@@ -23,22 +23,23 @@ module.exports = async function postToMedium(article, userID, token, platform) {
         "tags": article.tags,
         "publishStatus": "draft"
     };
-
+    
     if (platform === "hash") {
         mediumArticle = hashBuilder(article);
     }
     const config = {
         headers: { Authorization: `Bearer ${token}` }
     };
-
     try {
-        let result = await axios.post(
+       
+       let result = await axios.post(
             reqURL,
             mediumArticle,
             config,
         )
-        logger.info(result)
+        logger.info(result.data)
         return result;
+        
     } catch (error) {
         logger.error(error)
     }

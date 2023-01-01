@@ -60,7 +60,6 @@ Body:
 
 - `url` : URL of the The Blog from [Dev.to](http://Dev.to) which is to be cross-posted (String)
 - `medium` : (Boolean)
-- `medium_userID` : User's medium's user ID can be fetched from ([https://api.medium.com/v1/me](https://api.medium.com/v1/me))
 - `medium_token` : User's medium's API token
 - `hash_token` : User's Hashnode API Token
 
@@ -98,7 +97,6 @@ Body:
     "dev": true,
     "medium": true,
     "dev_api": "ShVKAZ1tb",
-    "medium_id": "1543cd6f0816d",
     "medium_api":"2615790132f4a2d67f81e2696"
 }
 ```

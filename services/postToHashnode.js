@@ -62,7 +62,6 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
         },
       }
     );
-    logger.info(result)
     return result;
   } catch (error) {
     logger.error(error)

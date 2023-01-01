@@ -19,7 +19,7 @@ exports.postFromDev = async (req, res, next) => {
         let hashPost;
 
         if (medium) {
-            mediumPost = await postToMedium(article, req.body.medium_userID, req.body.medium_token);
+            mediumPost = await postToMedium(article, req.body.medium_token);
             if (!mediumPost) {
                 logger.error("An Error Occured While Posting from Dev.to to Medium")
                 logger.info({ article, medium_userID: req.body.medium_userID, medium_token: req.body.medium_token })
