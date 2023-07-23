@@ -21,7 +21,7 @@ function mediumBuilder(article) {
   return articleObj;
 }
 
-module.exports = async function postToHashnode(articleBody, token, platform) {
+module.exports = async function postToHashnode(articleBody, token, platform,publicationId) {
   let authKey = token;
   let article;
 
@@ -37,8 +37,8 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
     let result = await axios.post(
       "https://api.hashnode.com",
       {
-        query:
-          "mutation createStory($input: CreateStoryInput!){ createStory(input: $input){ code success message } }",
+        
+        query:"mutation createPublicationStory($publicationId: String!, $input: CreateStoryInput!){ createPublicationStory(publicationId: $publicationId, input: $input){ code success message } }",
         variables: {
           input: {
             title: article.title,
@@ -53,7 +53,9 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
             coverImageURL:
               article.cover_image,
           },
-        },
+          publicationId: publicationId,
+        }
+        
       },
       {
         headers: {
@@ -62,6 +64,7 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
         },
       }
     );
+    console.log(result.data);
     return result;
   } catch (error) {
     logger.error(error)
