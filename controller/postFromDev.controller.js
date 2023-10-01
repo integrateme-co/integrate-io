@@ -17,7 +17,7 @@ exports.postFromDev = async (req, res, next) => {
 
     let mediumPost;
     let hashPost;
-
+    
     if (medium) {
       mediumPost = await postToMedium(article, req.body.medium_token);
       if (!mediumPost) {
@@ -31,7 +31,7 @@ exports.postFromDev = async (req, res, next) => {
           .json({ Error: "An Error Occurred While Posting from Dev.to to Medium" });
       }
     }
-
+    
     if (hash) {
       hashPost = await postToHashnode(
         article,
@@ -45,6 +45,7 @@ exports.postFromDev = async (req, res, next) => {
           hash_token: req.body.hash_token,
           platform: "dev",
         });
+        
         return res
           .status(400)
           .json({ Error: "An Error Occurred While Posting from Dev.to to Hashnode" });

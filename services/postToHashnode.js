@@ -24,7 +24,7 @@ function mediumBuilder(article) {
 module.exports = async function postToHashnode(articleBody, token, platform,publicationId) {
   let authKey = token;
   let article;
-
+  
   if (platform === "dev") {
     article = devBuilder(articleBody);
   }
@@ -34,39 +34,51 @@ module.exports = async function postToHashnode(articleBody, token, platform,publ
   }
 
   try {
+    const data={
+      input:{
+        title:article.title,
+        contentMarkdown:article.markdown,
+        isPartOfPublication: { publicationId: publicationId},
+        isRepublished: article.canonicalURL
+          ? {
+              originalArticleURL: article.canonicalURL,
+            }
+          : null,
+        tags: [
+          {
+            _id: "56744723958ef13879b9549b",
+            slug: article.slug,
+            name: "programmin, web-dev",
+          },
+        ],
+      },
+      publicationId: publicationId,
+      hideFromHashnodeFeed:false,
+
+    };
+    
+    if (article.cover_image) {
+      data.input.coverImageURL = cover_image;
+    }
     let result = await axios.post(
       "https://api.hashnode.com",
+      
       {
-        
-        query:"mutation createPublicationStory($publicationId: String!, $input: CreateStoryInput!){ createPublicationStory(publicationId: $publicationId, input: $input){ code success message } }",
-        variables: {
-          input: {
-            title: article.title,
-            contentMarkdown: article.markdown,
-            tags: [
-              {
-                _id: "56744723958ef13879b9549b",
-                slug: article.slug,
-                name: "programmin, web-dev",
-              },
-            ],
-            coverImageURL:
-              article.cover_image,
-          },
-          publicationId: publicationId,
-        }
-        
-      },
+        query: 'mutation createPublicationStory($input: CreateStoryInput!, $publicationId: String!){ createPublicationStory(input: $input, publicationId: $publicationId){ post { slug, publication { domain } } } }',
+        variables:data},
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: authKey,
+          "Authorization": authKey,
         },
       }
     );
-    console.log(result.data);
+    if(result.data.errors){
+      throw new Error(result.data.errors.message);
+    }
     return result;
   } catch (error) {
+    console.log(error);
     logger.error(error)
   }
 }

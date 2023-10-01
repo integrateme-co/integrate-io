@@ -17,8 +17,7 @@ module.exports = async function postToDev(article, token, platform) {
     'Content-Type': 'application/json',
     'api-key': token,
   };
-
-
+  
 
   const devArticle = {
     "article": {
@@ -35,10 +34,12 @@ module.exports = async function postToDev(article, token, platform) {
       devArticle,
       { headers },
     )
+    console.log(result);
     logger.info(result)
     return result;
 
   } catch (error) {
+    console.log(error);
     logger.error(error)
   }
 

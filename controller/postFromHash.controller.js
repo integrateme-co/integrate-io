@@ -9,7 +9,7 @@ function hashURLParser(URL) {
 }
 
 exports.postFromHash = async (req, res, next) => {
-  const { url, medium, dev, dev_api, medium_id, medium_api } = req.body;
+  const { url, medium, dev, dev_api, medium_api } = req.body;
   try {
     const slug = hashURLParser(url);
     const GET_ARTICLE = `{
