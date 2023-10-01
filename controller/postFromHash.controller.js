@@ -36,7 +36,7 @@ exports.postFromHash = async (req, res, next) => {
       devArticle = await postToDev(hashArticle, dev_api, "hash");
       if (!devArticle) {
         logger.error("An Error Occurred While Posting on Dev.to from Hashnode");
-        return res.status(400).json({ Message: "An Error Occurred While Posting on Dev.to from Hashnode" });
+        return res.status(400).json({ Error: "An Error Occurred While Posting on Dev.to from Hashnode" });
       }
     }
 
@@ -44,7 +44,7 @@ exports.postFromHash = async (req, res, next) => {
       mediumArticle = await postToMedium(hashArticle, medium_api, "hash");
       if (!mediumArticle) {
         logger.error("An Error Occurred While Posting on Medium from Hashnode");
-        return res.status(400).json({ Message: "An Error Occurred While Posting on Medium from Hashnode" });
+        return res.status(400).json({ Error: "An Error Occurred While Posting on Medium from Hashnode" });
       }
     }
 
