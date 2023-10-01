@@ -42700,3 +42700,44 @@
       "remoteAddress": "::1",
       "remotePort": 52210
     }
+[31mERROR[39m [2023-01-10, 1:45:07 PM] (19564 on DESKTOP-6Q79LBU): [36mRequest failed with status code 422[39m
+    Error: Request failed with status code 422
+        at createError (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\axios\lib\core\createError.js:16:15)
+        at settle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\axios\lib\core\settle.js:17:12)
+        at IncomingMessage.handleStreamEnd (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\axios\lib\adapters\http.js:269:11)
+        at IncomingMessage.emit (node:events:525:35)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[31mERROR[39m [2023-01-10, 1:45:07 PM] (19564 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting on Dev.to from Hashnode[39m
+[32mINFO[39m [2023-01-10, 1:45:07 PM] (19564 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-XkP+SL+czTi8fvycSTa2XP7xwj8\""
+      }
+    }
+    responseTime: 1108
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/hash",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "f6b0f032-3d80-44bd-8489-6f749e14bf9b",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "246"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 52928
+    }

@@ -11,9 +11,13 @@ const cronJob = require("./services/cronJobs");
 cronJob();
 
 const app = express();
-app.use(cors({
-    origin: '*'
-}));
+const corsOptions = {
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token',
+  };
+  app.use(cors(corsOptions));
+  
 
 const loggerMiddleware = expressPinoLogger({
     logger: loggerService,
@@ -27,4 +31,4 @@ app.use(cors());
 app.use('/api/v2', articleRoute);
 
 // connectDB();
-app.listen(PORT, () => console.log(`Server is running 🔥 on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server is running 🔥 on :${PORT}`));
