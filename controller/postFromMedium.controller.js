@@ -10,7 +10,7 @@ function mediumURLparser(URL) {
 
 exports.postFromMedium = async (req, res, next) => {
   try {
-    const { url, dev, hash, dev_api, hash_api } = req.body;
+    const { url, dev, hash, dev_api, hash_token } = req.body;
     const link = mediumURLparser(url);
     const { data } = await axios.get(link);
     const feed = data;
@@ -31,9 +31,9 @@ exports.postFromMedium = async (req, res, next) => {
         return res.status(400).json({ Error: "Unable to publish to Dev.to From Medium" });
       }
     }
-
+    
     if (hash) {
-      hashBlog = await postToHashnode(article, hash_api, "medium", req.body.hash_userID);
+      hashBlog = await postToHashnode(article, hash_token, "medium", req.body.hash_userID);
       if (!hashBlog) {
         return res.status(400).json({ Error: "Unable to publish to Hashnode from Medium" });
       }
