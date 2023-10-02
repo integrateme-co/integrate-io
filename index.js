@@ -11,12 +11,7 @@ const cronJob = require("./services/cronJobs");
 cronJob();
 
 const app = express();
-const corsOptions = {
-    origin: '*',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    allowedHeaders: 'Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token',
-  };
-  app.use(cors(corsOptions));
+app.use(cors());
   
 
 const loggerMiddleware = expressPinoLogger({
@@ -29,6 +24,20 @@ app.use(loggerMiddleware);
 app.use(express.json());
 app.use(cors());
 app.use('/api/v2', articleRoute);
+app.use((req, res, next) => { 
+  
+  //doesn't send response just adjusts it
+  res.header("Access-Control-Allow-Origin", "*") //* to give access to any origin
+  res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept, Authorization" //to give access to all the headers provided
+  );
+  if(req.method === 'OPTIONS'){
+      res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET'); //to give access to all the methods provided
+      return res.status(200).json({});
+  }
+  next(); //so that other routes can take over
+})
 
 // connectDB();
 app.listen(PORT, () => console.log(`Server is running 🔥 on :${PORT}`));

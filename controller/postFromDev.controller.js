@@ -9,8 +9,9 @@ function devURLParser(URL) {
   return result;
 }
 
-exports.postFromDev = async (req, res, next) => {
+exports.postFromDev = async (req, res) => {
   try {
+    console.log(req.body);
     const { url, medium, hash } = req.body;
     const { data } = await axios.get(devURLParser(url));
     const article = data;
