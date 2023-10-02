@@ -42741,3 +42741,926 @@
       "remoteAddress": "::1",
       "remotePort": 52928
     }
+[31mERROR[39m [2023-02-10, 5:12:24 AM] (5808 on DESKTOP-6Q79LBU): [36mCannot read properties of undefined (reading 'split')[39m
+    TypeError: Cannot read properties of undefined (reading 'split')
+        at devURLParser (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:7:19)
+        at exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:15:38)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:275:10)
+        at Function.handle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:174:3)
+[32mINFO[39m [2023-02-10, 5:12:24 AM] (5808 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "40",
+        "etag": "W/\"28-zHguMSIwkT4i4WslvjAP8dx6j18\""
+      }
+    }
+    responseTime: 18
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "87",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+        "content-type": "text/plain; charset=utf-8",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 52347
+    }
+[31mERROR[39m [2023-02-10, 5:13:53 AM] (8720 on DESKTOP-6Q79LBU): [36mCannot read properties of undefined (reading 'split')[39m
+    TypeError: Cannot read properties of undefined (reading 'split')
+        at devURLParser (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:7:19)
+        at exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:15:38)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:275:10)
+        at Function.handle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:174:3)
+[32mINFO[39m [2023-02-10, 5:13:53 AM] (8720 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "40",
+        "etag": "W/\"28-zHguMSIwkT4i4WslvjAP8dx6j18\""
+      }
+    }
+    responseTime: 22
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "87",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+        "content-type": "text/plain; charset=utf-8",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 52526
+    }
+[31mERROR[39m [2023-02-10, 5:59:13 AM] (14140 on DESKTOP-6Q79LBU): [36mCannot read properties of undefined (reading 'split')[39m
+    TypeError: Cannot read properties of undefined (reading 'split')
+        at devURLParser (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:7:19)
+        at exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:15:38)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:275:10)
+        at Function.handle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:174:3)
+[32mINFO[39m [2023-02-10, 5:59:13 AM] (14140 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "40",
+        "etag": "W/\"28-zHguMSIwkT4i4WslvjAP8dx6j18\""
+      }
+    }
+    responseTime: 67
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "318",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+        "content-type": "text/plain; charset=utf-8",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 54710
+    }
+[31mERROR[39m [2023-02-10, 6:02:13 AM] (15356 on DESKTOP-6Q79LBU): [36mCannot read properties of undefined (reading 'split')[39m
+    TypeError: Cannot read properties of undefined (reading 'split')
+        at devURLParser (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:7:19)
+        at exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:16:38)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:275:10)
+        at Function.handle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:174:3)
+[32mINFO[39m [2023-02-10, 6:02:13 AM] (15356 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "40",
+        "etag": "W/\"28-zHguMSIwkT4i4WslvjAP8dx6j18\""
+      }
+    }
+    responseTime: 16
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "315",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+        "content-type": "text/plain; charset=utf-8",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 54973
+    }
+[31mERROR[39m [2023-02-10, 6:03:06 AM] (15356 on DESKTOP-6Q79LBU): [36mCannot read properties of undefined (reading 'split')[39m
+    TypeError: Cannot read properties of undefined (reading 'split')
+        at devURLParser (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:7:19)
+        at exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:16:38)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:275:10)
+        at Function.handle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:174:3)
+[32mINFO[39m [2023-02-10, 6:03:06 AM] (15356 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "40",
+        "etag": "W/\"28-zHguMSIwkT4i4WslvjAP8dx6j18\""
+      }
+    }
+    responseTime: 4
+    req: {
+      "id": 2,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "315",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+        "content-type": "text/plain; charset=utf-8",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55030
+    }
+[31mERROR[39m [2023-02-10, 6:03:30 AM] (15356 on DESKTOP-6Q79LBU): [36mCannot read properties of undefined (reading 'split')[39m
+    TypeError: Cannot read properties of undefined (reading 'split')
+        at devURLParser (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:7:19)
+        at exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:16:38)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:275:10)
+        at Function.handle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:174:3)
+[32mINFO[39m [2023-02-10, 6:03:30 AM] (15356 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "40",
+        "etag": "W/\"28-zHguMSIwkT4i4WslvjAP8dx6j18\""
+      }
+    }
+    responseTime: 4
+    req: {
+      "id": 3,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "315",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+        "content-type": "text/plain; charset=utf-8",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55058
+    }
+[31mERROR[39m [2023-02-10, 6:05:22 AM] (1536 on DESKTOP-6Q79LBU): [36mCannot read properties of undefined (reading 'split')[39m
+    TypeError: Cannot read properties of undefined (reading 'split')
+        at devURLParser (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:7:19)
+        at exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:16:38)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:275:10)
+        at Function.handle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:174:3)
+[32mINFO[39m [2023-02-10, 6:05:22 AM] (1536 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "40",
+        "etag": "W/\"28-zHguMSIwkT4i4WslvjAP8dx6j18\""
+      }
+    }
+    responseTime: 15
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "315",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+        "content-type": "text/plain; charset=utf-8",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55140
+    }
+[31mERROR[39m [2023-02-10, 6:05:27 AM] (1536 on DESKTOP-6Q79LBU): [36mCannot read properties of undefined (reading 'split')[39m
+    TypeError: Cannot read properties of undefined (reading 'split')
+        at devURLParser (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:7:19)
+        at exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:16:38)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:137:13)
+        at Route.dispatch (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\route.js:112:3)
+        at Layer.handle [as handle_request] (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\layer.js:95:5)
+        at C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:281:22
+        at Function.process_params (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:335:12)
+        at next (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:275:10)
+        at Function.handle (C:\Users\Smk_winner\Desktop\integrate-io\node_modules\express\lib\router\index.js:174:3)
+[32mINFO[39m [2023-02-10, 6:05:27 AM] (1536 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "40",
+        "etag": "W/\"28-zHguMSIwkT4i4WslvjAP8dx6j18\""
+      }
+    }
+    responseTime: 4
+    req: {
+      "id": 2,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "315",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "access-control-allow-methods": "GET, POST, OPTIONS",
+        "content-type": "text/plain; charset=utf-8",
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55146
+    }
+[32mINFO[39m [2023-02-10, 6:06:13 AM] (644 on DESKTOP-6Q79LBU):
+    data: {
+      "id": "5a122613eb4f",
+      "title": "Wtf is Grpc? Part 1: Authentication and Authorization in Flutter and Golang.",
+      "authorId": "16cea2b5ae9188aab4286c51d21926c20831ac0e965d1973e092d9f93c7faf0c3",
+      "url": "https://medium.com/@djsmk123/5a122613eb4f",
+      "canonicalUrl": "https://dev.to/djsmk123/wtf-is-grpc-part-1-authentication-and-authorization-in-flutter-and-golang-37jj",
+      "publishStatus": "draft",
+      "license": "",
+      "licenseUrl": "https://policy.medium.com/medium-terms-of-service-9db0094a1e0f",
+      "tags": [
+        "go",
+        "mongodb",
+        "flutter",
+        "grpc"
+      ]
+    }
+[31mERROR[39m [2023-02-10, 6:06:14 AM] (644 on DESKTOP-6Q79LBU):
+    Error
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:77:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:06:14 AM] (644 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:06:14 AM] (644 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 4323
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "315",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "content-type": "application/json; charset=utf-8",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55189
+    }
+[31mERROR[39m [2023-02-10, 6:06:48 AM] (7876 on DESKTOP-6Q79LBU):
+    Error
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:77:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:06:48 AM] (7876 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:06:48 AM] (7876 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 1651
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "316",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "content-type": "application/json; charset=utf-8",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55218
+    }
+[31mERROR[39m [2023-02-10, 6:08:24 AM] (10576 on DESKTOP-6Q79LBU): [36mAn error occurred because 'result.data.errors' is truthy.[39m
+    Error: An error occurred because 'result.data.errors' is truthy.
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:78:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:08:24 AM] (10576 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:08:24 AM] (10576 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 1630
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "316",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "content-type": "application/json; charset=utf-8",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55296
+    }
+[31mERROR[39m [2023-02-10, 6:10:01 AM] (15368 on DESKTOP-6Q79LBU): [36m[object Object][39m
+    Error: [object Object]
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:78:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:10:01 AM] (15368 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:10:01 AM] (15368 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 1199
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "614bae96-3dc8-4cf6-9ef8-d40acfb909a0",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "358"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55388
+    }
+[31mERROR[39m [2023-02-10, 6:12:17 AM] (8940 on DESKTOP-6Q79LBU): [36m[object Object][39m
+    Error: [object Object]
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:78:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:12:17 AM] (8940 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:12:17 AM] (8940 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 1761
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "e29347d5-a9e5-435c-8339-c2329645c546",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "358"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55498
+    }
+[31mERROR[39m [2023-02-10, 6:15:59 AM] (16824 on DESKTOP-6Q79LBU): [36mres is not defined[39m
+    ReferenceError: res is not defined
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:77:5)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:15:59 AM] (16824 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:15:59 AM] (16824 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 3484
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "6b9092b2-52bb-431d-9bb2-d6b82c09799c",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "358"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55677
+    }
+[31mERROR[39m [2023-02-10, 6:16:20 AM] (15656 on DESKTOP-6Q79LBU): [36mError occured while cross posting to Hashnode: Authentication key not valid[39m
+    Error: Error occured while cross posting to Hashnode: Authentication key not valid
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:78:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:16:20 AM] (15656 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:16:20 AM] (15656 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 3057
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "a6c4a6e9-c686-4fcb-9edd-d95ca8423305",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "358"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55708
+    }
+[31mERROR[39m [2023-02-10, 6:16:54 AM] (15656 on DESKTOP-6Q79LBU): [36mError occured while cross posting to Hashnode: Authentication key not valid[39m
+    Error: Error occured while cross posting to Hashnode: Authentication key not valid
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:78:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:16:54 AM] (15656 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:16:54 AM] (15656 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 2022
+    req: {
+      "id": 2,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "7c0fd2f1-89b7-4c07-88cc-96d76c52a822",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "358"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55759
+    }
+[31mERROR[39m [2023-02-10, 6:17:32 AM] (18232 on DESKTOP-6Q79LBU): [36mError occured while cross posting to Hashnode: Authentication key not valid[39m
+    Error: Error occured while cross posting to Hashnode: Authentication key not valid
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:79:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:17:32 AM] (18232 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:17:32 AM] (18232 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 2688
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "731fcab6-acb5-4e68-a2ed-0c40beed2dc8",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "358"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55813
+    }
+[31mERROR[39m [2023-02-10, 6:17:54 AM] (10084 on DESKTOP-6Q79LBU): [36mError occured while cross posting to Hashnode: Authentication key not valid[39m
+    Error: Error occured while cross posting to Hashnode: Authentication key not valid
+        at postToHashnode (C:\Users\Smk_winner\Desktop\integrate-io\services\postToHashnode.js:79:13)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async exports.postFromDev (C:\Users\Smk_winner\Desktop\integrate-io\controller\postFromDev.controller.js:37:18)
+[31mERROR[39m [2023-02-10, 6:17:54 AM] (10084 on DESKTOP-6Q79LBU): [36mAn Error Occurred While Posting from Dev.to to Hashnode[39m
+[32mINFO[39m [2023-02-10, 6:17:54 AM] (10084 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 400,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "67",
+        "etag": "W/\"43-Bj3+tKzZh8DC8is+hBjdP12UvpQ\""
+      }
+    }
+    responseTime: 3011
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "8b59ee7c-66e0-49fe-bb8f-5b566e46c0ef",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "358"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55846
+    }
+[32mINFO[39m [2023-02-10, 6:18:37 AM] (10084 on DESKTOP-6Q79LBU): [36mSuccessfully Created[39m
+[32mINFO[39m [2023-02-10, 6:18:37 AM] (10084 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 201,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "34",
+        "etag": "W/\"22-VyeOgCkdLPUwLoIMufjYgfKOeBg\""
+      }
+    }
+    responseTime: 3294
+    req: {
+      "id": 2,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "content-type": "application/json",
+        "user-agent": "PostmanRuntime/7.33.0",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "9fe51514-6f93-420c-ba2a-076c4474fb6f",
+        "host": "localhost:8080",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-length": "357"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55895
+    }
+[32mINFO[39m [2023-02-10, 6:19:41 AM] (10052 on DESKTOP-6Q79LBU): [36mSuccessfully Created[39m
+[32mINFO[39m [2023-02-10, 6:19:41 AM] (10052 on DESKTOP-6Q79LBU): [36mrequest completed[39m
+    res: {
+      "statusCode": 201,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "34",
+        "etag": "W/\"22-VyeOgCkdLPUwLoIMufjYgfKOeBg\""
+      }
+    }
+    responseTime: 2684
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/v2/dev",
+      "query": {},
+      "params": {},
+      "headers": {
+        "host": "localhost:8080",
+        "connection": "keep-alive",
+        "content-length": "315",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47",
+        "content-type": "application/json; charset=utf-8",
+        "accept": "*/*",
+        "origin": "http://127.0.0.1:8200",
+        "sec-fetch-site": "cross-site",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "http://127.0.0.1:8200/",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 55947
+    }

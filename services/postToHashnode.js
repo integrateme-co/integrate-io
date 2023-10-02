@@ -34,6 +34,7 @@ module.exports = async function postToHashnode(articleBody, token, platform,publ
   }
 
   try {
+  
     const data={
       input:{
         title:article.title,
@@ -69,12 +70,13 @@ module.exports = async function postToHashnode(articleBody, token, platform,publ
       {
         headers: {
           "Content-Type": "application/json",
-          "Authorization": authKey,
+          Authorization: authKey,
         },
       }
     );
-    if(result.data.errors){
-      throw new Error(result.data.errors.message);
+    console.log(result);
+    if (result.data.errors) {
+      throw new Error(`Error occured while cross posting to Hashnode: ${result.data.errors[0].message}`);
     }
     return result;
   } catch (error) {
