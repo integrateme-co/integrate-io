@@ -1,5 +1,5 @@
 const axios = require('axios');
-const logger = require('../services/loggerService')
+
 
 function hashBuilder(article) {
   const devArticle = {
@@ -35,12 +35,11 @@ module.exports = async function postToDev(article, token, platform) {
       { headers },
     )
     console.log(result);
-    logger.info(result)
     return result;
 
   } catch (error) {
     console.log(error);
-    logger.error(error)
+    
   }
 
 }

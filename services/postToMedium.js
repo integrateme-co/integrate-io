@@ -1,5 +1,5 @@
 const axios = require('axios');
-const logger = require('../services/loggerService')
+
 const fetchMediumUserId = require('../services/fetchMediumUserId');
 function hashBuilder(article) {
     const mediumArticle = {
@@ -37,10 +37,10 @@ module.exports = async function postToMedium(article, token, platform) {
             mediumArticle,
             config,
         )
-        logger.info(result.data)
+
         return result;
         
     } catch (error) {
-        logger.error(error)
+        console.log(error);
     }
 }

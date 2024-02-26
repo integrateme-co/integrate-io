@@ -3,9 +3,6 @@ const express = require("express");
 const cors = require("cors");
 const articleRoute = require('./routes/article.routes');
 const PORT = process.env.PORT || 8080;
-const loggerService = require('./services/loggerService');
-const expressPinoLogger = require('express-pino-logger');
-const connectDB = require('./config/db');
 const cronJob = require("./services/cronJobs");
 
 cronJob();
@@ -14,15 +11,15 @@ const app = express();
 app.use(cors());
   
 
-const loggerMiddleware = expressPinoLogger({
-    logger: loggerService,
-    autoLogging: true,
-});
-
-app.use(loggerMiddleware);
 
 app.use(express.json());
 app.use(cors());
+app.get('/', function(req, res){
+    res.send({
+        "method": "GET",
+        "status":"Active"
+    });
+});
 app.use('/api/v2', articleRoute);
 app.use((req, res, next) => { 
   
