@@ -1,5 +1,5 @@
 const axios = require("axios");
-const logger = require('../services/loggerService')
+
 
 
 function devBuilder(article) {
@@ -21,10 +21,10 @@ function mediumBuilder(article) {
   return articleObj;
 }
 
-module.exports = async function postToHashnode(articleBody, token, platform) {
+module.exports = async function postToHashnode(articleBody, token, platform,publicationId) {
   let authKey = token;
   let article;
-
+  
   if (platform === "dev") {
     article = devBuilder(articleBody);
   }
@@ -34,27 +34,39 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
   }
 
   try {
+  
+    const data={
+      input:{
+        title:article.title,
+        contentMarkdown:article.markdown,
+        isPartOfPublication: { publicationId: publicationId},
+        isRepublished: article.canonicalURL
+          ? {
+              originalArticleURL: article.canonicalURL,
+            }
+          : null,
+        tags: [
+          {
+            _id: "56744723958ef13879b9549b",
+            slug: article.slug,
+            name: "programmin, web-dev",
+          },
+        ],
+      },
+      publicationId: publicationId,
+      hideFromHashnodeFeed:false,
+
+    };
+    
+    if (article.cover_image) {
+      data.input.coverImageURL = cover_image;
+    }
     let result = await axios.post(
       "https://api.hashnode.com",
+      
       {
-        query:
-          "mutation createStory($input: CreateStoryInput!){ createStory(input: $input){ code success message } }",
-        variables: {
-          input: {
-            title: article.title,
-            contentMarkdown: article.markdown,
-            tags: [
-              {
-                _id: "56744723958ef13879b9549b",
-                slug: article.slug,
-                name: "programmin, web-dev",
-              },
-            ],
-            coverImageURL:
-              article.cover_image,
-          },
-        },
-      },
+        query: 'mutation createPublicationStory($input: CreateStoryInput!, $publicationId: String!){ createPublicationStory(input: $input, publicationId: $publicationId){ post { slug, publication { domain } } } }',
+        variables:data},
       {
         headers: {
           "Content-Type": "application/json",
@@ -62,9 +74,13 @@ module.exports = async function postToHashnode(articleBody, token, platform) {
         },
       }
     );
-    logger.info(result)
+    console.log(result);
+    if (result.data.errors) {
+      throw new Error(`Error occured while cross posting to Hashnode: ${result.data.errors[0].message}`);
+    }
     return result;
   } catch (error) {
-    logger.error(error)
+    console.log(error);
+  
   }
 }

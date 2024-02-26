@@ -53,6 +53,7 @@ Body:
     "url": "https://dev.to/uzairali10/load-balancer-101-4jl9",
     "medium": true,
     "hash": true,
+    "hash_userID":"63afb169f8ef1447b8c0cfe2",
      "medium_token":"2615790132f4a47a93d13abd55f96",
      "hash_token": "fee010ff-bd64-496a-d28a58e30bb9"
 }
@@ -60,9 +61,9 @@ Body:
 
 - `url` : URL of the The Blog from [Dev.to](http://Dev.to) which is to be cross-posted (String)
 - `medium` : (Boolean)
-- `medium_userID` : User's medium's user ID can be fetched from ([https://api.medium.com/v1/me](https://api.medium.com/v1/me))
 - `medium_token` : User's medium's API token
 - `hash_token` : User's Hashnode API Token
+- `hash_userID`: In the URL in your browser between `https://hashnode.com/` and /dashboard you see a long alphanumeric value, `https:// hashnode.com/{This is the publication id}/dashboard` . That’s your publication id.
 
 ## Post From Medium to Dev or Hashnode
 
@@ -76,7 +77,8 @@ Body:
     "dev_api": "ShVKKiC9AZ1tb",
     "dev": true,
     "hash": true,
-    "hash_api": "fee010ff-bde30bb9"
+    "hash_api": "fee010ff-bde30bb9",
+    "hash_userID":"fee010ff-bde30bb9",
 }
 ```
 
@@ -85,6 +87,7 @@ Body:
 - `hash` : (Boolean)
 - `dev_api` : User's dev.to API token
 - `hash_api` : User's Hashnode API Token
+- `hash_userID`: In the URL in your browser between `https://hashnode.com/` and /dashboard you see a long alphanumeric value, `https:// hashnode.com/{This is the publication id}/dashboard` . That’s your publication id.
 
 ## Post From Hashnode to Dev or Medium
 
@@ -98,7 +101,6 @@ Body:
     "dev": true,
     "medium": true,
     "dev_api": "ShVKAZ1tb",
-    "medium_id": "1543cd6f0816d",
     "medium_api":"2615790132f4a2d67f81e2696"
 }
 ```

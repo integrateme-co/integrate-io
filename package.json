@@ -14,10 +14,12 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-pino-logger": "^6.0.0",
+    "install": "^0.13.0",
     "json2md": "^1.12.0",
     "mongoose": "^6.0.7",
     "node-cron": "^3.0.0",
     "node-fetch": "^3.0.0",
+    "nodeman": "^1.1.2",
     "pino": "^6.13.3",
     "pino-pretty": "^7.0.1"
   },

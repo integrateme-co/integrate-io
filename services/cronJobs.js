@@ -8,7 +8,7 @@ const { delDoc } = require("./deleteDoc");
 function cronJob() {
   setInterval(
     async function runJobs() {
-      console.log("started job");
+      
       const records = await searchDB();
      const publishedResult = await publishArticle(records);
   
