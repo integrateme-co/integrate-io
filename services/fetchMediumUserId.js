@@ -1,5 +1,5 @@
 const axios = require('axios');
-const logger = require('../services/loggerService')
+
 async function fetchMediumUserId(token) {
     try{
         const config = {
@@ -14,7 +14,7 @@ async function fetchMediumUserId(token) {
         return result.data.data.id;
 
     }catch(e){
-        logger.error(e)
+        
         throw e;
     }
 }
